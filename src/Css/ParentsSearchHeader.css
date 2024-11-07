@@ -1,0 +1,35 @@
+.search-header {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.tab {
+  padding: 10px;
+  font-weight: normal;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.tab.active {
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.login-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-button,
+.logout-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
