@@ -1,7 +1,7 @@
 import React from "react";
 
 function LessonManagePage(props) {
-  return <div></div>;
+  return <>수업 관리</>;
 }
 
 export default LessonManagePage;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../../Css/ParentsSearchHeader.css"; // CSS 파일 import
+import { Link } from "react-router-dom";
 
 function ParentsSearchHeader() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 여부
@@ -32,19 +33,19 @@ function ParentsSearchHeader() {
           onClick={() => handleTabChange("강사찾기")}
           className={`tab ${activeTab === "강사찾기" ? "active" : ""}`}
         >
-          강사찾기
+          <Link to={"/findTutor"}>강사 찾기</Link>
         </button>
         <button
           onClick={() => handleTabChange("과외 신청 현황")}
           className={`tab ${activeTab === "과외 신청 현황" ? "active" : ""}`}
         >
-          과외 신청 현황
+          <Link to={"/appStatus"}>과외 신청 현황</Link>
         </button>
         <button
           onClick={() => handleTabChange("자녀 수업 관리")}
           className={`tab ${activeTab === "자녀 수업 관리" ? "active" : ""}`}
         >
-          자녀 수업 관리
+          <Link to={"/LessonManage"}>자녀 수업 관리</Link>
         </button>
       </div>
 

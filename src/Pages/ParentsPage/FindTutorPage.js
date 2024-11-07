@@ -1,7 +1,7 @@
 import React from "react";
 
 function FindTutorPage(props) {
-  return <div></div>;
+  return <>강사 찾기</>;
 }
 
 export default FindTutorPage;

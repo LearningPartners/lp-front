@@ -1,12 +1,13 @@
 import React from "react";
-import ParentsSearchHeader from "./Components/Parents/ParentsSearchHeader";
-import TutorSearchHeader from "./Components/Tutor/TutorSearchHeader";
+import ParentsRoute from "./Routes/ParentsRoute";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      {/* <ParentsSearchHeader /> */}
-      <TutorSearchHeader />
+      <Routes>
+        <Route path="/*" element={<ParentsRoute />} />
+      </Routes>
     </>
   );
 }
